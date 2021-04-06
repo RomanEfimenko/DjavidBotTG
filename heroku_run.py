@@ -10,8 +10,8 @@ import asyncio
 import aiohttp
 from PIL import Image, ImageChops, ImageDraw, ImageFont
 
-TOKEN = os.environ['TOKEN']
-ID_TRENER = os.environ['ID_TRENER']
+TOKEN = os.environ.get('TOKEN')
+ID_TRENER = os.environ.get('ID_TRENER')
 
 WEBHOOK_HOST = 'https://djavidbot.herokuapp.com/'  # name your app
 WEBHOOK_PATH = '/webhook/'
